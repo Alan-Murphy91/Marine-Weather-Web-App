@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Seafarer</title>
+        <link href="stylesheet.css" rel="stylesheet">
+
+		<style type="text/css">
+			.olImageLoadError {
+				display: none !important;
+			}
+		</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfgxZbk0VlGCEBZ5ddxQoty5sQPydOCF8&callback=initMap">
+    </script>
+    <script type="text/javascript" src="jasonmalonequery.js"></script>
+
+</head>
+<body>
+
+    <h2 class="ttitle">Circumnavigator</h2>
+    <div id="mmap1">
+    <script>
+    var mst_width="100%";
+    var mst_height="400px";
+    var mst_border="0";
+    var mst_map_style="terrain";
+    var mst_mmsi="";
+    var mst_show_track="";
+    var mst_show_info="";
+    var mst_fleet="";
+    var mst_zoom="16";
+    var mst_show_names="1";
+    var mst_scroll_wheel="true";
+    var mst_show_menu="true";
+    </script>     
+    </div>
+    <br />
+    <div class="flex2">
+            <div class="info1"></div>
+            <div class="info2">Loading..</div>
+            <div class="info3">Loading..</div>
+    </div>
+    <br />
+    <div class="flex">
+        <div id="map"></div>
+    </div>
+    <br />
+<!--
+    <div class="flex5">
+        <div class="info4"></div>
+        <div class="info5"></div>
+    </div>
+    <div class="flex6">
+        <div class="info6"></div>
+        <div class="info7"></div>
+    </div>
+-->
+<!--
+    <br />
+    <br />
+-->
+    <div class="tab">
+  <button class="tablinks eee active" onclick="openContent(event, '0000')">00:00</button>
+  <button class="tablinks" onclick="openContent(event, '0600')">06:00</button>
+  <button class="tablinks" onclick="openContent(event, '1200')">12:00</button>
+    <button class="tablinks" onclick="openContent(event, '1800')">18:00</button>
+</div>
+
+<div id="0000" class="tabcontent ddd zeroam">
+  Loading..
+</div>
+
+<div id="0600" class="tabcontent sixam"> 
+</div>
+
+<div id="1200" class="tabcontent noon">
+</div>
+      
+<div id="1800" class="tabcontent sixpm">
+</div>
+<br />
+<footer>
+ <small>&copy; Copyright 2017 - Alan Murphy</small>
+</footer>
+</body>
+
+</html>
